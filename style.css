@@ -1,0 +1,81 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo geral do corpo */
+  body {
+    font-family: @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+    line-height: 1.6;
+    padding: 20px;
+    background-color: pink;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: palevioletred;
+  }
+  
+  /* Estilo para os blocos de imagem */
+  picture {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    border-radius: 8px;  /* Para dar bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave nas imagens */
+  }
+  
+  /* Estilo para imagens em telas maiores */
+  @media (min-width: 601px) {
+    body {
+      max-width: 1200px;
+      margin: 0 auto; /* Para centralizar o conteúdo */
+    }
+  
+    h1 {
+      font-size: 3rem;
+    }
+  
+    picture {
+      display: inline-block;
+      width: 30%;
+      margin-right: 10px;
+    }
+  
+    picture img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Estilo para telas menores (dispositivos móveis) */
+  @media (max-width: 600px) {
+    body {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    picture {
+      width: 100%; /* Imagens ocupam toda a largura disponível */
+      margin-bottom: 15px; /* Menos espaço entre as imagens */
+    }
+  
+    picture img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
